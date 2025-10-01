@@ -10,8 +10,8 @@ const RickAndMorty = () => {
       <SearchBtn onSearch={fetchRick} />
       <div className="mx-auto gap-4 p-4 grid grid-cols-4 grid-rows-3">
         {rickmor.map((rick) => (
-          <Link to={`/character/${rick.id}`}>
-            <div key={rick.id} className="flex flex-col items-center">
+          <Link key={rick.id} to={`/character/${rick.id}`}>
+            <div className="flex flex-col items-center">
               <img src={rick.image} alt={rick.name} className="rounded-md" />
               <p>{rick.name}</p>
             </div>

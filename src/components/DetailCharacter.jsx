@@ -20,11 +20,11 @@ const DetailCharacter = () => {
         />
         <h2 className="text-xl font-bold mt-2">{character.name}</h2>
         <p>
-          Status:{" "}
+          Status:
           {character.status === "Alive" ? (
             <span className="text-2xl">alive 😎</span>
           ) : (
-            <span className="text-2xl">Dead💀</span>
+            <span className="text-2xl">Dead 💀</span>
           )}
         </p>
         <p>Species: {character.species}</p>

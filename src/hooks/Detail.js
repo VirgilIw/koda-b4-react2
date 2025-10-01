@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export function Detail(id) {
-  const [character, setCharacter] = useState(null);
+  const [character, setCharacter] = useState("");
 
   async function fetchDetail() {
     try {
@@ -17,7 +17,7 @@ export function Detail(id) {
 
   useEffect(() => {
     fetchDetail();
-  }, [id]);
+  }, []);
 
   return { character };
 }
